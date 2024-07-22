@@ -30,7 +30,7 @@ export default function TaskForm(props) {
       });
     }
   }
-  function checkTag(tag) {
+  function checkActiveTag(tag) {
     return taskData.tags.some((item) => item === tag);
   }
 
@@ -63,22 +63,22 @@ export default function TaskForm(props) {
             <Tag
               tagName="HTML"
               selectTag={selectTag}
-              selected={checkTag("HTML")}
+              selected={checkActiveTag("HTML")}
             />
             <Tag
               tagName="CSS"
               selectTag={selectTag}
-              selected={checkTag("CSS")}
+              selected={checkActiveTag("CSS")}
             />
             <Tag
               tagName="JavaScript"
               selectTag={selectTag}
-              selected={checkTag("JavaScript")}
+              selected={checkActiveTag("JavaScript")}
             />
             <Tag
               tagName="React"
               selectTag={selectTag}
-              selected={checkTag("React")}
+              selected={checkActiveTag("React")}
             />
           </div>
 
