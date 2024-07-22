@@ -34,7 +34,7 @@ export default function TaskForm(props) {
     return taskData.tags.some((item) => item === tag);
   }
 
-  function handleSubmitForm(e) {
+  function handleSubmit(e) {
     e.preventDefault();
     console.log(taskData);
     props.setTask((prev) => {
@@ -49,7 +49,7 @@ export default function TaskForm(props) {
 
   return (
     <header className="flex items-center justify-center border-b-2 ">
-      <form action="" className="w-[50%]" onSubmit={handleSubmitForm}>
+      <form action="" className="w-[50%]" onSubmit={handleSubmit}>
         <input
           type="text"
           className=" w-full text-xl font-medium rounded bg-[#f9f9f9] py-[8px] px-[12px] mb-[15px]"
