@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Tag from "./Tag";
+import Tag from "./Tag.jsx";
 
 export default function TaskForm(props) {
   // Functionality
