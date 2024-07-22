@@ -37,6 +37,7 @@ export default function TaskForm(props) {
   function handleSubmit(e) {
     e.preventDefault();
     console.log(taskData);
+    console.log("Submitting task with tags:", taskData.tags); // Additional log statement
     props.setTask((prev) => {
       return [...prev, taskData];
     });
